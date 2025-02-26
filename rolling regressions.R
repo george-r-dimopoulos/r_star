@@ -1,5 +1,5 @@
 library(ggplot2); library(stringr)
-library(dplyr); library(tidyr); library(purrr)
+library(dplyr); library(purrr)
 library(stargazer)
 library(tidyr)
 library(readr)

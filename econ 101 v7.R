@@ -269,9 +269,6 @@ intl_data <- intl_data %>%
     adj_ExchangeRate_JPN = (1 - rho) * ExchangeRate_JPN
   )
 
-#regression_uk_inertial_manual <- lm(InterestRate_UK ~ InterestRate_UK_lag + adj_CPI_UK + adj_OutputGap_UK + adj_ExchangeRate_UK, data = intl_data)
-#regression_eu_inertial_manual <- lm(InterestRate_EU ~ InterestRate_EU_lag + adj_CPI_EU + adj_OutputGap_EU + adj_ExchangeRate_EU, data = intl_data)
-#regression_jpn_inertial_manual <- lm(InterestRate_JPN ~ InterestRate_JPN_lag + adj_CPI_JPN + adj_OutputGap_JPN + adj_ExchangeRate_JPN, data = intl_data)
 
 regression_uk_inertial_manual <- lm(InterestRate_UK ~ uk_inertia + adj_CPI_UK + adj_OutputGap_UK, data = intl_data)
 regression_eu_inertial_manual <- lm(InterestRate_EU ~ eu_inertia + adj_CPI_EU + adj_OutputGap_EU, data = intl_data)
